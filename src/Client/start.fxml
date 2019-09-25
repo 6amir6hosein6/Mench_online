@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="464.0" style="-fx-background-color: #7f8c8d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.start_controler">
+   <children>
+      <Label layoutX="272.0" layoutY="35.0" text="تعداد کاربران آنلاین :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="34.0" layoutY="163.0" mnemonicParsing="false" onAction="#start" prefHeight="38.0" prefWidth="189.0" style="-fx-background-color: #f1c40f;" text="شروع">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="onlineperson" layoutX="121.0" layoutY="35.0" prefHeight="28.0" prefWidth="99.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="98.0" text="نوع صفحه منچ خودرا وارد کنید :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ch" layoutX="21.0" layoutY="100.0" prefWidth="150.0" style="-fx-background-color: #3498db; -fx-border-color: #000;" />
+      <Button layoutX="250.0" layoutY="163.0" mnemonicParsing="false" onAction="#profile" prefHeight="38.0" prefWidth="189.0" style="-fx-background-color: #00ced1;" text="مشاهده پروفایل">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
